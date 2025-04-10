@@ -6,6 +6,8 @@ public class collision : MonoBehaviour
     public Player player;
     public Game game;
     public over overs;
+    public AudioSource audio2;
+  
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,13 +23,15 @@ public class collision : MonoBehaviour
             {
                 Destroy(other.gameObject);
                 game.Add(1);
+                audio2.Play();
+               
             }
             else
             {
                 player.enabled = false;
                 Time.timeScale = 0f;
                 overs.gameover();
-            }
+                overs.audio3.Pause();            }
         }
     }
 

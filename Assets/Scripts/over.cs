@@ -14,6 +14,8 @@ public class over : MonoBehaviour
     private int currentscore;
     public TextMeshProUGUI large;
     private int lscore;
+    public AudioSource audio1;
+    public AudioSource audio3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,8 +24,9 @@ public class over : MonoBehaviour
         tap.SetActive(true);
         Time.timeScale = 0f;
         fscore.enabled = false;
-        large .enabled = false; 
-
+        large .enabled = false;
+        audio3.loop = true;
+       
     }
 
     // Update is called once per frame
@@ -31,9 +34,8 @@ public class over : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            startgame();
+            startgame();  
         }
-
     }
     public void gameover()
     {
@@ -46,6 +48,8 @@ public class over : MonoBehaviour
         fscore.enabled = true;
         updatescore();
         large.enabled = true;
+        audio1.Play();
+    
     }
 
     public void startgame()
@@ -53,7 +57,7 @@ public class over : MonoBehaviour
         score.SetActive(true);
         tap.SetActive(false);
         Time.timeScale = 1f;
-
+        audio3.Play();
     }
     public void restarts()
     {
