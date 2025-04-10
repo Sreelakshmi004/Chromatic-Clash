@@ -40,7 +40,7 @@ public class collision : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("no"))
+        if (collision.gameObject.CompareTag("END"))
         {
             congrats.SetActive(true);
         }

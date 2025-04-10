@@ -6,6 +6,7 @@ TagManager:
   tags:
   - collectable
   - no
+  - END
   layers:
   - Default
   - TransparentFX

@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COLOUR MATCHER
+  m_text: CHROMATIC CLASH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c2df11401c3cf84481164d41317b97d, type: 2}
   m_sharedMaterial: {fileID: -3511913867639670182, guid: 0c2df11401c3cf84481164d41317b97d, type: 2}
@@ -351,8 +351,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 160
-  m_fontSizeBase: 160
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -664.19727, w: -73.40817}
+  m_margin: {x: 0, y: 0, z: -680.9078, w: -73.40817}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
