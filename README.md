@@ -1,1 +1,8 @@
 # Chromatic Clash
+Chromatic Clash: Dino Runner is a vibrant color-matching runner game built in Unity. The player controls a fast-moving cube that races forward continuously with the help of physics-based force. Movement is restricted between lanes on the X-axis, controlled using either the arrow keys or the A/D keys. What makes this game unique is its dynamic color-changing mechanic: the player character changes its color every few seconds, cycling between three predefined hues — cyan, orange, and violet.
+
+As the player rushes forward, color-coded obstacles appear. The key objective is to collide only with obstacles that match the player's current color. When the player successfully collides with a matching color obstacle, the obstacle is destroyed, a sound effect is played, and the score increases. If the player collides with a non-matching color obstacle, the game ends immediately. The game pauses, and a game over UI is displayed along with the current score and the highest score achieved so far.
+
+The player's current score is shown in real time using a TextMeshPro UI element. A high score system using PlayerPrefs stores the best score across sessions. At the start of the game, a tap-to-start screen is shown with a prompt. Upon clicking, the game begins, background music starts looping, and the player begins to move forward automatically.
+
+In addition to the obstacle-based challenge, the game includes a special win condition. When the player collides with a game object tagged as “END”, a congratulations panel is displayed, signifying successful completion. This object acts like the finish line of the game. Upon reaching it, the UI congratulates the player with a special screen and stops all other gameplay elements.
