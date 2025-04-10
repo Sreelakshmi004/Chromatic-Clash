@@ -7,6 +7,7 @@ public class collision : MonoBehaviour
     public Game game;
     public over overs;
     public AudioSource audio2;
+    public GameObject congrats;
   
 
     private void OnTriggerEnter(Collider other)
@@ -31,8 +32,19 @@ public class collision : MonoBehaviour
                 player.enabled = false;
                 Time.timeScale = 0f;
                 overs.gameover();
-                overs.audio3.Pause();            }
+                overs.audio3.Pause();
+                congrats.SetActive(false);
+            }
         }
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("no"))
+        {
+            congrats.SetActive(true);
+        }
+      
     }
 
 

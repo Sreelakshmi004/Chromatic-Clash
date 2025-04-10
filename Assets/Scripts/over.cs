@@ -10,12 +10,13 @@ public class over : MonoBehaviour
     public GameObject quit;
     public GameObject tap;
     public GameObject score;
-    public TextMeshProUGUI fscore;
+    public TextMeshProUGUI fscore;//current score
     private int currentscore;
-    public TextMeshProUGUI large;
+    public TextMeshProUGUI large;//highcoretext
     private int lscore;
     public AudioSource audio1;
     public AudioSource audio3;
+    public GameObject Congratulations;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +27,7 @@ public class over : MonoBehaviour
         fscore.enabled = false;
         large .enabled = false;
         audio3.loop = true;
+        Congratulations.SetActive(false);
        
     }
 
@@ -49,6 +51,7 @@ public class over : MonoBehaviour
         updatescore();
         large.enabled = true;
         audio1.Play();
+        Congratulations.SetActive(false);
     
     }
 
